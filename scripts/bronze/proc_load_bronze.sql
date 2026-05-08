@@ -1,12 +1,19 @@
 /*
-====================================================
+===========================================================================
 Strored Procedure :Load Bronze Layer (Source->bronze)
-===================================================
+===============================================================================
 Script purpose:
   This stored procedure loads data into the 'bronze' schema from external CSV files
   It performs the following actions:
   - truncates the bronze tables before loading data
   - Uses the 'bulk insert' command to load data from csv files to bronze tables
+Paramters:
+	None
+	This stored procedure does not accept any parameters or return any values
+
+Usage Example:
+	Exec dbo.load_bronze
+===================================================================================
 */
 use DataWarehouse;
 go
